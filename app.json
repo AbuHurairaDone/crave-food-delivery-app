@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Crave",
+    "slug": "crave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF9F3",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF9F3",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#FF6B35"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF9F3",
+          "image": "./assets/icon.png",
+          "imageWidth": 200
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Crave needs your location to show nearby restaurants and deliver food directly to your doorstep."
+        }
+      ],
+      "expo-font",
+      "expo-status-bar"
+    ]
+  }
+}
