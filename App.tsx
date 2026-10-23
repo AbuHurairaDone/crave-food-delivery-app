@@ -43,6 +43,7 @@ export default function App() {
     PlusJakartaSans_800ExtraBold,
   });
 
+  // Effect to handle status bar color and splash screen
   useEffect(() => {
     // Set native Android status bar color to primary orange
     if (Platform.OS === 'android') {
@@ -56,6 +57,7 @@ export default function App() {
   }, [fontsLoaded]);
 
   return (
+    // Wrap the app with Redux Provider 
     <Provider store={store}>
       <SafeAreaProvider>
         <GestureHandlerRootView style={styles.container}>
@@ -69,6 +71,7 @@ export default function App() {
   );
 }
 
+// Styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
